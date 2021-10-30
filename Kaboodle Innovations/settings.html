@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Settings Page</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="s-layout__sidebar">
+        <a class="s-sidebar__trigger" href="#0">
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <nav class="s-sidebar__nav">
+          <div class="title-img">
+            <a href="index.html">
+              <img src="./assets/Group 26640.png" alt="" />
+            </a>
+          </div>
+          <ul class="sidebar_items">
+            <li>
+              <a class="s-sidebar__nav-link" href="#0">
+                <span class="s-sidebar__nav-link__icons"
+                  ><img
+                    src="./assets/Icon material-dashboard.png"
+                    alt="" /></span
+                ><em style="color: #ff7777">Dashboard</em>
+              </a>
+            </li>
+            <li>
+              <a class="s-sidebar__nav-link" href="#0">
+                <span class="s-sidebar__nav-link__icons"
+                  ><img src="./assets/Icon ionic-md-book.png" alt="" /></span
+                ><em>Select Chapter</em>
+              </a>
+            </li>
+            <li>
+              <a class="s-sidebar__nav-link" href="#0">
+                <span class="s-sidebar__nav-link__icons"
+                  ><img src="./assets/classroom.png" alt="" /></span
+                ><em>My Class</em>
+              </a>
+            </li>
+            <li>
+              <a class="s-sidebar__nav-link" href="#0">
+                <span class="s-sidebar__nav-link__icons"
+                  ><img src="./assets/discussion.png" alt="" /></span
+                ><em>Class Forum</em>
+              </a>
+            </li>
+            <li>
+              <a class="s-sidebar__nav-link" href="#0">
+                <span class="s-sidebar__nav-link__icons"
+                  ><img src="./assets/graphic-progression.png" alt="" /></span
+                ><em>My Progress</em>
+              </a>
+            </li>
+            <li>
+              <a class="s-sidebar__nav-link" href="#0">
+                <span class="s-sidebar__nav-link__icons"
+                  ><img src="./assets/writing.png" alt="" /></span
+                ><em>Teacher's Note</em>
+              </a>
+            </li>
+          </ul>
+          <div class="s-layout__sidebar_tree">
+            <img src="./assets/Group 26644.png" alt="" />
+          </div>
+        </nav>
+      </div>
+      <!-- sidebar ends -->
+
+      <div class="settings-content">
+        <div class="settings-left">
+          <h1 class="title">Settings</h1>
+          <div class="profile-top">
+            <div>
+              <img src="./assets/Ellipse 1.png" alt="" />
+              <a href="#" class="change">Change Picture</a>
+            </div>
+            <div class="name-variables">
+              <div class="first">
+                <label for="fname">First name:</label><br />
+                <input type="text" id="fname" name="fname" value="Akansha" />
+              </div>
+              <div class="last">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value="Singh" />
+              </div>
+            </div>
+            <div class="birthday">
+              <label for="birthday">Birthday:</label>
+              <input type="date" id="birthday" name="birthday" />
+            </div>
+          </div>
+          <div class="login-details">
+            <div class="group">
+              <label for="mobile">Mobile No:</label>
+              <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                pattern="^\d{10}$"
+                required
+              />
+            </div>
+            <div class="group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" value="" />
+            </div>
+            <div class="group">
+              <label for="password">New Password:</label>
+              <input type="password" id="password" name="password" value="" />
+              <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+            </div>
+            <div class="group">
+              <label for="confirm-password">Confirm Password:</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                value=""
+              />
+              <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+            </div>
+            <div class="group">
+              <label for="old-password">Old Password:</label>
+              <input
+                type="password"
+                id="old-password"
+                name="old-password"
+                value=""
+              />
+              <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div style="position:absolute;float: right;top: 0;right: 0;" class="settings-right-top-nav">
+      <div class="nav-links">
+        <a href="#"><img src="./assets/Group 27618.png" alt="" /></a>
+        <a href="#"><img src="./assets/Group 26731.png" alt="" /></a>
+        <a href="#"><img src="./assets/Ellipse 1.png" alt="" /></a>
+        <span class="user">Akansha Singh</span>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="button apply">Apply</button>
+      <button class="button cancel">Cancel</button>
+    </div>
+    <div class="chat">
+      <a href="#"><img src="./assets/Group 26788.png" alt=""></a>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

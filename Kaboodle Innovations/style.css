@@ -1,0 +1,581 @@
+/* Primary Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #333;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+em {
+  font-style: normal;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Layout */
+.main {
+  width: 100%;
+  /* min-height: 100vh; */
+}
+
+/* Sidebar */
+.s-sidebar__trigger {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+}
+
+.s-sidebar__trigger > i {
+  display: inline-block;
+  margin: 1.5em 0 0 1.5em;
+  color: #f07ab0;
+}
+
+.s-sidebar__nav {
+  position: fixed;
+  top: 0;
+  left: -15em;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  width: 15em;
+  height: 100%;
+  background: #dcdcdc;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.s-sidebar__nav:hover,
+.s-sidebar__nav:focus,
+.s-sidebar__trigger:focus + .s-sidebar__nav,
+.s-sidebar__trigger:hover + .s-sidebar__nav {
+  left: 0;
+}
+
+.title-img {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.title-img img {
+  width: 200px;
+}
+
+.s-sidebar__nav ul {
+  position: absolute;
+  top: 8em;
+  left: 5;
+  margin: 0;
+  padding: 0;
+  width: 15em;
+}
+
+.s-sidebar__nav ul li {
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.s-sidebar__nav-link {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 4em;
+}
+
+.s-sidebar__nav-link__icons {
+  position: absolute;
+  left: 1.3rem;
+  top: 1.2rem;
+}
+
+.s-sidebar__nav-link em {
+  position: absolute;
+  top: 50%;
+  left: 4em;
+  transform: translateY(-50%);
+}
+
+.s-sidebar__nav-link:hover {
+  background: #4d6276;
+}
+
+.s-sidebar__nav-link > i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+}
+
+.s-sidebar__nav-link > i::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.s-layout__sidebar_tree img {
+  /* width: 200px; */
+  position: absolute;
+  top: 74%;
+  padding: 0 0.5rem;
+}
+
+/* main content */
+.s-layout__content {
+  /* margin-right: 3%; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section-left {
+  /* padding: 2% 3%; */
+  flex: 8;
+}
+
+.section-right {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 2%; */
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 4;
+}
+
+.achievements-card {
+  background-color: #77ACF1;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.cup-img-left {
+  width: 300px;
+  height: 150px;
+  background-image: url("./assets/Group 26647.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  margin: 2rem 0;
+}
+
+.achievements-title {
+  color: #fff;
+  font-size: 1.4rem;
+  padding-top: 1rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  letter-spacing: 0.2rem;
+}
+
+.trophies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trophy-text {
+  font-size: 14px;
+  color: white;
+}
+
+.trophy-fixed-size {
+  width: 70px;
+  height: 65px;
+}
+
+.mt-half {
+  margin-top: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 1.25rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.card-box {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-left: 2rem;
+}
+
+.singleCard {
+  position: relative;
+  background: #f6dfeb;
+  width: 250px;
+  text-align: center;
+  padding: 40px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.one {
+  background-color: #f6dfeb;
+}
+
+.two {
+  background-color: #caf7e3;
+}
+.three {
+  background-color: #fff8d9;
+}
+.four {
+  background-color: #fff5eb;
+}
+
+.class-image {
+  width: 50px;
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.img-1 {
+  background-image: url("./assets/Group 26652.png");
+  background-repeat: no-repeat;
+  background-position: 0 40%;
+  background-size: 85%;
+}
+.img-2 {
+  background-image: url("./assets/Group 26653.png");
+  background-repeat: no-repeat;
+  background-position: 0 40%;
+  background-size: 85%;
+}
+.img-3 {
+  background-image: url("./assets/Group 26651.png");
+  background-repeat: no-repeat;
+  background-position: 0 40%;
+  background-size: 85%;
+}
+.img-4 {
+  background-image: url("./assets/Group 26650.png");
+  background-repeat: no-repeat;
+  background-position: 0 40%;
+  background-size: 85%;
+}
+
+.info-card img {
+  width: 50px;
+}
+
+.avatar-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1.5rem;
+}
+
+.avatar-info img{
+  width: 50px;
+}
+
+.avatar-full-wrapper {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.name {
+  padding-left: 10px;
+  color: #ff7777;
+}
+.avatar-2-image {
+  width: 120px;
+  padding-top: 10px;
+}
+
+.btn {
+  color: white;
+  padding: 10px 18px;
+  border-radius: 18px;
+  margin: 1rem auto;
+  border: none;
+}
+
+.card {
+  position: relative;
+  background-color: #65ebef;
+  width: 230px;
+  height: 130px;
+  border-radius: 25px;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.point-value {
+  font-size: 28px;
+  margin-top: 1rem;
+}
+
+/* settings pgae */
+
+.title{
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.settings-content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.settings-right-top-nav{
+  margin-right: 5%;
+}
+
+.change {
+  display: block;
+  text-decoration: underline;
+  color: #53c2c5;
+  font-size: 13px;
+}
+
+.profile-top {
+  display: flex;
+  flex-wrap: wrap;
+}
+.first,
+.last {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.birthday {
+  margin: 0.5rem 1rem;
+}
+
+.name-variables label {
+  padding-right: 12px;
+}
+
+.login-details {
+  margin: 1.5rem 0;
+}
+
+.login-details label {
+  padding: 0.5rem 1rem 1rem 0;
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+.nav-links{
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.nav-links img{
+  width: 50px;
+  padding-left: 1rem;
+}
+
+.user{
+  padding-left: 0.7rem;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  color: white;
+  padding: 12px 26px;
+  border-radius: 22px;
+  margin: 0 1rem;
+  border: none;
+}
+
+.apply {
+  background-color: #3dcb38;
+  box-shadow: 0px 15px 20px rgba(65, 252, 137, 0.4);
+}
+
+.cancel {
+  background-color: #f06b6b;
+  box-shadow: 0px 15px 20px rgba(252, 36, 65, 0.4);
+}
+
+.chat{
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+.settings-left{
+  margin-left: 10rem;
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  .section-left{
+   flex: 1;
+   padding: 0;
+ }
+ .cup-img-left{
+   background-size: cover;
+   width: 55%;
+   height: 190px;
+ }
+ .achievements{
+   transform: translateX(-5%);
+ }
+ .card-box{
+   padding: 1rem 0rem;
+  }
+  .singleCard{
+   width: 350px;
+   text-align: center;
+   padding: 40px 0px;
+ }
+ .achievements-card{
+    flex-direction: column;
+  }
+  .settings-left{
+    margin-left: 2rem;
+  }
+ }
+
+/* Mobile First */
+
+/* @media only screen and (max-width : 600px){
+  .card-box{
+   grid-template-columns: repeat(1,1fr);
+   padding: 1rem 1.5rem;
+  }
+  .singleCard{
+    width: 480px;
+    text-align: center;
+    padding: 40px 10px;
+  }
+  .main{
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .card-box{
+   margin-left: 0;
+   grid-gap: 1rem;
+  }
+  .achievements-card{
+    flex-direction: column;
+  }
+
+  .cup-img-left{
+    background-size: contain;
+    margin: 1rem 0;
+    width: 55%;
+    height: 190px;
+  }
+}*/
+
+@media only screen and (max-device-width: 680px) {
+  .card-box{
+    grid-template-columns: repeat(1,1fr);
+    padding: 1rem 1rem;
+    margin-left: 0.5rem;
+    grid-gap: 1rem;
+   }
+   .singleCard{
+     width: 620px;
+     text-align: center;
+     padding: 60px 50px;
+   }
+   .cup-img-left{
+    background-size: contain;
+    margin: 1rem 0;
+    width: 55%;
+    height: 190px;
+  }
+  .achievements-card{
+    flex-direction: column;
+  }
+}
+
+
+@media (min-width: 672px) {
+  .s-layout__content,
+  .settings-content {
+    margin-left: 8em;
+  }
+
+  /* Sidebar */
+  .s-sidebar__trigger {
+    width: 4em;
+  }
+
+  .s-sidebar__nav {
+    width: 5em;
+    left: 0;
+  }
+
+  .settings-content{
+    margin-left: 0rem;
+  }
+
+  .s-sidebar__nav:hover,
+  .s-sidebar__nav:focus,
+  .s-sidebar__trigger:hover + .s-sidebar__nav,
+  .s-sidebar__trigger:focus + .s-sidebar__nav {
+    width: 13em;
+  }
+}
+
+@media (min-width: 1088px) {
+  .s-layout__content,
+  .settings-content {
+    margin-left: 10em;
+  }
+
+  /* Sidebar */
+  .s-sidebar__trigger {
+    display: none;
+  }
+
+  .s-sidebar__nav {
+    width: 15em;
+  }
+
+  .s-sidebar__nav ul {
+    /* top: 1.3em; */
+  }
+}
